@@ -10,7 +10,7 @@ function camelCaseToKebabCase(camelCase='') {
   const kebabCase  = camelCaseAsArray.map(str => {
     if (str === str.toUpperCase()) return `-${str.toLowerCase()}`
     return str
-  }).reduce((acc, value) => acc.concat(value), '')
+  }).join('')
 
   return kebabCase
 }
